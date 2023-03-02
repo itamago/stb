@@ -4,7 +4,7 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 set(PROJECT_NAME "stb")
 
-project(${PROJECT_NAME} CXX)
+project(${PROJECT_NAME} C CXX)
 
 set(SOURCES
     "stb_image_write.h"
@@ -12,7 +12,6 @@ set(SOURCES
     "stb_sprintf.h"
     "dummy.cpp"
 )
-
 
 add_library(${PROJECT_NAME} STATIC
     ${SOURCES}
